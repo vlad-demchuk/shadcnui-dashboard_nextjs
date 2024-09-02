@@ -20,9 +20,12 @@ export default function RootLayout({
     <html lang="en">
       <body className={`flex ${inter.className}`}>
         <Sidebar />
-        <main className="w-full h-full">
+        <main className="w-full min-h-screen">
           <Header />
-          {children}
+          <div className="p-8">
+            {children}
+
+          </div>
         </main>
       </body>
     </html>
